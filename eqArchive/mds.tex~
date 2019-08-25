@@ -1,0 +1,14 @@
+\documentclass[a5paper]{article}
+\usepackage{mathpazo, courier}
+\usepackage[scaled]{helvet}
+\begin{document}
+
+\LARGE
+\pagestyle{empty}
+
+\[
+Q(\bar{z}_1,...,\bar{z}_n)=c\sum_{h,i}(g(diss_{h,i})-||z_i-z_h||)^2
+\]
+
+
+\end{document}

@@ -1,0 +1,12 @@
+#!/bin/bash
+
+eqname=$1
+cp eq.tex $eqname.tex
+pdflatex $eqname.tex
+pdfcrop $eqname.pdf
+rm  $eqname.pdf
+mv $eqname-crop.pdf PDF/$eqname.pdf
+pdf2svg PDF/$eqname.pdf SVG/$eqname.svg
+mv $eqname.tex eqArchive/
+rm *.log
+rm *.aux
